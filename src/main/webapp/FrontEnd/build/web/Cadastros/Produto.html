@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--  [RF005] A aplicação deve cadastrar produtos. -->
+
+<html>
+    <head>
+        <title>Cadastro de Produtos</title>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style_produto.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+
+    <div class="area" >
+
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend> Cadastro de Produtos </legend><br><br>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="txtcodigo_produto_id">Cód. Produto : </label>  
+                    <div class="col-md-2">
+                        <input id="txtcodigo_produto_id" name="txtcodigo_produto_id" type="text" placeholder="" class="form-control input-md">
+
+                    </div>
+                </div><br>
+
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="txtproduto">Produto : </label>  
+                    <div class="col-md-6">
+                        <input id="txtproduto" name="txtproduto" type="text" placeholder="Descrição do Produto" class="form-control input-md" required="">
+
+                    </div>
+                </div><br>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="txtgrupo">Grupo : </label>
+                    <div class="col-md-4">
+                        <select id="txtgrupo" name="txtgrupo" class="form-control">
+                            <option value="1">Termogênicos</option>
+                            <option value="2">Proteínas</option>
+                            <option value="3">Vitaminas</option>
+                            <option value="4">Aminoácidos</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="txtcodigo_unidade_id">Unidade : </label>
+                    <div class="col-md-4">
+                        <select id="txtcodigo_unidade_id" name="txtcodigo_unidade_id" class="form-control">
+                            <option value="UND">Unidade</option>
+                            <option value="CX">Caixa</option>
+                            <option value="PC">Pacote</option>
+                            <option value="FAR">Fardo</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="txtcusto">Valor Custo : </label>  
+                    <div class="col-md-2">
+                        <input id="txtcusto" name="txtcusto" type="text" placeholder="" class="form-control input-md" required="">
+
+                    </div>
+                </div><br>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="txtvenda">Valor Venda : </label>  
+                    <div class="col-md-2">
+                        <input id="txtvenda" name="txtvenda" type="text" placeholder="" class="form-control input-md">
+
+                    </div>
+                </div><br>
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <form method="post" enctype="multipart/form-data">
+                        Imagem  do Produto: <br>
+                        <input name="produto" type="file" />
+                        <br />
+                        <!--<input type="submit" value="Salvar" /> -->
+                    </form>
+                </div><br>
+
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="btnsalvar"></label>
+                    <div class="col-md-8"> <br>
+                        <button id="btnsalvar" name="btnsalvar" class="btn btn-primary">Salvar</button>
+                        <button id="btncancelar" name="btncancelar" class="btn btn-danger">Cancelar</button>
+                    </div>
+                </div>
+
+
+            </fieldset>
+        </form>
+    </div> 
+
+</html>

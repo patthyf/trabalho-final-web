@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--  [RF005] A aplicação deve cadastrar produtos. -->
+
+<html>
+    <head>
+        <title>Cliente</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style_produto.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <form class="form-horizontal">
+        <fieldset>
+            <!-- Form Name -->
+            <legend>Cadastro de Clientes</legend>
+            <div style="background-color: #4ED4E8"></div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nome">Nome</label>  
+                <div class="col-md-5">
+                    <input id="nome" name="nome" type="text" placeholder="Entre com o Nome" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="cpf">CPF</label>  
+                <div class="col-md-5">
+                    <input id="cpf" name="cpf" type="text" placeholder="Numero do CPF" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="datanascimento">Data de Nascimento</label>  
+                <div class="col-md-4">
+                    <input id="datanascimento" name="datanascimento" type="text" placeholder="dd/mm/yyyy" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="sexo">Sexo</label>
+                <div class="col-md-4">
+                    <select id="sexo" name="sexo" class="form-control">
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="cep">CEP</label>  
+                <div class="col-md-4">
+                    <input id="cep" name="cep" type="text" placeholder="99999-999" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nome">Cidade</label>  
+                <div class="col-md-5">
+                    <input id="nome" name="nome" type="text" placeholder="Cidade" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nome">Bairro</label>  
+                <div class="col-md-5">
+                    <input id="nome" name="nome" type="text" placeholder="Bairro" class="form-control input-md" required="">
+                </div>
+            </div>
+
+
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="celular">Celular</label>  
+                <div class="col-md-4">
+                    <input id="celular" name="celular" type="text" placeholder="(99)999999999" class="form-control input-md">
+
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+
+
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="btnsalvar"></label>
+        <div class="col-md-8"> <br>
+            <button id="btnsalvar" name="btnsalvar" class="btn btn-primary">Salvar</button>
+            <button id="btncancelar" name="btncancelar" class="btn btn-danger">Cancelar</button>
+        </div>
+    </div>
+
+</html>
+
+

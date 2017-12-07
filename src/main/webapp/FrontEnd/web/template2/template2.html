@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+        <title>Sistemas da Suplementação</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script>
+            src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity = "sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin = "anonymous" ></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <img src="imagens/logo.jpg" width=150px height=80px/>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Departamentos <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../paginasWeb/termogenicos-produtos.html">Termogenicos</a></li>
+                                <li><a href="../paginasWeb/pre-treino-produtos.html">Pré-Treino</a></li>
+                                <li><a href="../paginasWeb/massa-muscular-produtos.html">Massa Muscular</a></li>
+                                <li><a href="../paginasWeb/testosterona-produtos.html">Testosterona</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="../paginasWeb/todos-produtos.html">Todos</a></li>
+                            </ul>
+                       </li>
+                        <li class="active">
+                            <a href="../paginasWeb/ofertas.html">Ofertas<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="../Cadastros/Contato.html">Entre em Contato</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Qual seu Objetivo?" size=60px>
+                        </div>
+                        <button type="submit" class="btn btn-default">Pesquisar</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Faça seu login <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="../Cadastros/Login.html">Entrar</a></li>
+                                <li><a href="../Cadastros/Cliente.html">Cliente Novo? Cadastrar</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li>Area Administrador</li>
+                                <li><a href="../Cadastros/Funil.html">Funil de Vendas</a></li>
+                                <li><a href="../Cadastros/Empresa.html">Cadastrar Empresa</a></li>
+                                <li><a href="../Cadastros/Produto.html">Cadastar Produtos</a></li>
+                                <li><a href="../Cadastros/Usuario.html">Cadastrar Usuario</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+
+
+
+        <!-- CARROUSSEL-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="imagens/promo1.jpg" alt="promocao1"/>
+                </div>
+                <div class="item">
+                    <img src="imagens/promo2.jpg" alt="promocao2"/>
+                </div>
+                <div class="item">
+                    <img src="imagens/promo3.jpg" alt="promocao3"/>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <!--Barra de produtos-->
+        <nav class="barra-produtos">
+            <a class="navbar-brand">Produtos</a>
+
+            <!--PRODUTOS-->
+            <section class="produtos">
+                <div class="imagens-produtos">
+
+                    <div class="produto">
+                        <img id="imagem" src="imagens/produto1.jpg"/>
+                        <div class="descricao">
+                            <h3>Carb Intercept 3</h3>
+                            <p>Emagrecedor inteligente com efeito em 3 áreas</p>
+                            <div class="preco">
+                                R$ 99,00
+                            </div>
+                            <p><a href="paginas/produtoCarb.html" class="btn btn-primary" role="button">+ Informações</a></p>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img id="imagem" src="imagens/produto2.jpg"/>
+                        <div class="descricao">
+                            <h3>Outlift Concentrado</h3>
+                            <p> O mais potente pré-treino da nutre da atualidade!</p>
+                            <div class="preco">
+                                R$ 119,90
+                            </div>
+                            <p><a href="paginas/produtoOutlift.html" class="btn btn-primary" role="button">+ Informações</a></p>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img id="imagem" src="imagens/produto3.jpg"/>
+                        <div class="descricao">
+                            <h3>C4 Extreme Energy Cellucor</h3>
+                            <p> Força devastadora, totalmente explosivo!</p>
+                            <div class="preco">
+                                R$ 139,90
+                            </div>
+                            <p><a href="paginas/produtoC4.html" class="btn btn-primary" role="button">+ Informações</a></p>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img id="imagem" src="imagens/produto4.jpg"/>
+                        <div class="descricao">
+                            <h3>Pro-endorfina</h3>
+                            <p>Suplemento para liberar endorfina</p>
+                            <div class="preco">
+                                R$ 129,90
+                            </div>
+                            <p><a href="paginas/produtoEndorfina.html" class="btn btn-primary" role="button">+ Informações</a></p>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img id="imagem" src="imagens/produto5.jpg"/>
+                        <div class="descricao">
+                            <h3>Beta Alanina</h3>
+                            <p> Suplemento de Beta Alanina de alta potencia!</p>
+                            <div class="preco">
+                                R$ 99,90
+                            </div>
+                            <p><a href="paginas/produtoBeta.html" class="btn btn-primary" role="button">+ Informações</a></p>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img id="imagem" src="imagens/produto6.jpg"/>
+                        <div class="descricao">
+                            <h3>Tested</h3>
+                            <p> Rábida absorção com avançado resultados!</p>
+                            <div class="preco">
+                                R$ 129,90
+                            </div>
+                            <p><a href="paginas/produtoTested.html" class="btn btn-primary" role="button">+ Informações</a></p>
+                        </div>
+                    </div>
+
+                    <div id="todos-produtos">
+                        <a href="../paginasWeb/todos-produtos.html">+Produtos</a></br>
+                    </div>
+
+                </div>
+            </section>
+        </nav>
+
+        <div class="rodape">
+            <div class="row">
+                <div class="span12">
+                    <div class="thumbnail center well well-small text-center">
+                        <h2>Informativo</h2>
+
+                        <p>Assine nosso informativo e receba promoções <br>
+                            exclussivas direto na caixa de entrada de seu email!</p>
+
+                        <form action="" method="post">
+                            <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                                <input type="text" id="" name="" placeholder="Digite seu email">
+                            </div>
+                            <br />
+                            <input type="submit" value="Assinar" class="btn btn-large" />
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Trabalho Programação Web 
+            Josieli & Patricia
+        </footer>	
+
+
+
+        <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>

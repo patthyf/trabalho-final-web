@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+ [RF0012] O sistema deve cadastrar fases de um funil de vendas.
+-->
+<html>
+    <head>
+        <title>Cadastro de Etapas </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+        <link rel="stylesheet" href="../style_produto.css">
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style_produto.css">
+    </head>
+    
+    
+    <nav class="navbar navbar-default">
+  <ul class="nav navbar-nav navbar-right">
+ <li class="active"><a href="#">Início
+ <span class="sr-only"></span></a></li>
+</nav>
+    
+   
+    
+    <div class="area" >
+       
+    <form class="form-horizontal">
+<fieldset>
+
+    <!-- Form Name -->
+    <legend> Cadastro de Etapas </legend><br><br>
+  
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtcodigo_etapa_id">Cód. Etapa : </label>  
+  <div class="col-md-2">
+  <input id="txtcodigo_etapa_id" name="txtcodigo_etapa_id" type="text" placeholder="" class="form-control input-md">
+    
+  </div>
+</div><br>
+   
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtproduto">Descrição: </label>  
+  <div class="col-md-6">
+  <input id="txtproduto" name="txtproduto" type="text" placeholder="Etapa do Funil de Vendas" class="form-control input-md" required="">
+    
+  </div>
+</div><br>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnsalvar"></label>
+  <div class="col-md-8"> <br>
+    <button id="btnsalvar" name="btnsalvar" class="btn btn-primary">Salvar</button>
+    <button id="btncancelar" name="btncancelar" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+
+
+</fieldset>
+    </form>
+   </div> 
+</html>

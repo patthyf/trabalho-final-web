@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- [RF001] A aplicação deve cadastrar a empresa (entrada)
+     [RF003] A aplicação deve permitir a customização da logomarca, 
+            nome da empresa, endereço, cores principais, banner principal, 
+            dados de contato de telefone, e-mail e mídias sociais do modelo de site selecionado. -->
+<html>
+    <head>
+        <title>Empresa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link href="css/style_produto.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+
+    <div class="area" >
+
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend> Cadastro de Empresa </legend><br><br>
+                <div class="container">
+                    <div class="row">        
+                        <div class="panel-group" id="accordion">
+
+                            <div class="panel panel-default">
+                                <div id="collapseDadosGerais" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+
+                                        <div class="form-group">
+                                            <label>Nome:</label> <br>
+                                            <input type="text" class="form-control" id="nome" placeholder="nome empresa">
+                                        </div> <br>
+                                        <div class="form-group">
+                                            <label>CNPJ:</label> <br>
+                                            <input type="text" class="form-control" id="cnpj" placeholder="cnpj">
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+
+                                <div id="collapseLocalizacao" class="panel-collapse collapse in">
+                                    <div class="panel-body">   
+
+                                        <div class="row">
+
+                                            <div class="col-xs-10"><br>
+                                                <label>Logradouro:</label> <br>
+                                                <input type="text" class="form-control" id="logradouro" placeholder="nome do logradouro">
+                                            </div>
+
+                                            <div class="col-xs-6"> <br>
+                                                <label>Cep:</label> <br>
+                                                <input type="text" class="form-control" id="cep">                               
+                                            </div>
+
+                                            <div class="col-xs-2"><br>
+                                                <label>Número:</label> <br>
+                                                <input type="text" class="form-control">
+                                            </div>   
+                                            <div class="col-xs-6"><br>
+                                                <label>Telefone:</label> <br>
+                                                <input type="text" class="form-control" id="telefone">                               
+                                            </div>
+                                            <div class="col-xs-6"><br>
+                                                <label>Email:</label> <br>
+                                                <input type="text" class="form-control" id="email">                               
+                                            </div>
+
+
+                                            <br> <div class="form-group">
+                                                <form method="post" enctype="multipart/form-data">
+                                                    Selecione a Logo:<br>
+                                                    <input name="logo" type="file" />
+                                                    <br>
+                                                </form>
+                                                <form method="post" enctype="multipart/form-data"> <br>
+                                                    Selecione o Banner Principal:<br>
+                                                    <input name="banner" type="file" />
+                                                    <br>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>  
+                            </div>
+
+
+                            <div id="collapseSocial" class="panel-collapse collapse in">
+                                <div class="panel-body">		
+                                    <div class="row">
+
+                                        <div class="col-xs-10">	<br>		
+                                            <label>Site:</label> <br>
+                                            <input type="text" class="form-control" id="site">		
+                                        </div>
+
+                                        <div class="col-xs-8">			
+                                            <label>Facebook:</label> <br>
+                                            <input type="text" class="form-control" id="facebook">		
+                                        </div>
+
+                                        <div class="col-xs-8">			
+                                            <label>Twitter:</label> <br>
+                                            <input type="text" class="form-control" id="twitter">		
+                                        </div>						
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- panel-group -->               
+                    </div>
+
+                    <br/>
+                    <button type="submit" class="btn btn-default">Salvar</button>        
+                    <button id="btncancelar" name="btncancelar" class="btn btn-danger">Cancelar</button>
+
+                    </form>
+
+                </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div> 
+</html>

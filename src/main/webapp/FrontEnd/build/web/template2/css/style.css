@@ -1,0 +1,12 @@
+.produtos{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-direction: row;
+	height: 480px;
+}
+#imagem{
+	width: 130px;
+	height: 130px;
+}
